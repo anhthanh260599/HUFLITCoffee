@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HUFLIT Coffee</title>
+    <!-- Link thêm logo, icon -->
+    <link rel="icon" href="./images/HUFLIT Coffee.png">
+    <!-- Link thêm icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Responsive link -->
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="./images/HUFLIT Coffee.png" alt="">
+        </a>
+    
+        <nav class="navbar">
+            <a href="./index.html">Trang chủ</a>
+            <a href="./about.html">Về chúng tôi</a>
+            
+            <a href="./product.html">Thực Đơn</a>
+            <a href="./contact.html">cửa hàng</a>
+            <a href="./news.html">tin tức</a>
+            <a href="./gallery.html">thư viện ảnh</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm tại đây...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-1.png" alt="">
+                <div class="content">
+                    <h3>Cà phê 01</h3>
+                    <div class="price">30.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-2.png" alt="">
+                <div class="content">
+                    <h3>Cà phê 02</h3>
+                    <div class="price">30.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-3.png" alt="">
+                <div class="content">
+                    <h3>Cà phê 03</h3>
+                    <div class="price">30.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-4.png" alt="">
+                <div class="content">
+                    <h3>Cà phê 04</h3>
+                    <div class="price">30.000đ/-</div>
+                </div>
+            </div>
+            <a href="./cart.html" class="btn">mua ngay</a>
+        </div>
+    
+    </header>
+
+<!-- header section ends -->
+
+<section class="contact" id="contact">
+
+    <div class="row">
+        <h1 class="heading"> <span>LIÊN HỆ</span></h1>
+    </div>
+    <div class="row">
+        <div class="content">
+            <h3>Mọi thắc mắc xin liên hệ trực tiếp với chúng tôi:</h3>
+            <p style="font-size: 1.8rem; font-weight: 800;color: #eee;"><span>Tên</span>: Nguyễn Văn A</p>
+            <p><i class="fas fa-phone"></i><a href="tel:02838632652"> (+84 28) 38 632 052 </a></p>
+            <p><i class="fas fa-envelope"></i> <a href="https://mail.google.com/">contact@huflit.edu.vn</a></p>
+            <p><i class="fas fa-fax"></i> <a href="./contact.html">(+84 28) 38 650 991</a></p>       
+        </div>
+    </div>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4648807452513!2d106.66645882962867!3d10.775662465650866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9023a3a85d%3A0xdee5c99a7b02feab!2sHuflit!5e0!3m2!1svi!2s!4v1637126107830!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3>Nhập thông tin và nội dung</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Tên của bạn" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Email của bạn" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="tel" placeholder="Số điện thoại" required>
+            </div>
+            <div class="inputBox">
+                <!-- <span class="fas fa-phone"></span> -->
+                <input type="text" placeholder="Nội dung ít nhất 100 ký tự" minlength="100" required>
+            </div>
+            <input type="submit" onclick="alert('Nội dung gửi thành công')" value="gửi phản hồi" class="btn" >
+        </form>
+
+    </div>
+
+</section>
+<section class="footer">
+
+    <div class="share">
+        <a href="https://huflit.edu.vn/" class="fab fa-facebook-f"></a>
+        <a href="https://huflit.edu.vn/" class="fab fa-twitter"></a>
+        <a href="https://huflit.edu.vn/" class="fab fa-instagram"></a>
+        <a href="https://huflit.edu.vn/" class="fab fa-linkedin"></a>
+        <a href="https://huflit.edu.vn/" class="fab fa-youtube"></a>
+    </div>
+
+    <div class="links">
+        <a href="/index.html">Trang chủ</a>
+        <a href="/about.html">Về chúng tôi</a>
+        
+        <a href="/product.html">Thực Đơn</a>
+        <a href="/contact.html">Cửa hàng</a>
+        <a href="/news.html">Tin tức</a>
+        <a href="/gallery.html">Thư viện ảnh</a>
+    </div>
+
+    <div class="credit">&copy; <span>HUFLIT Coffee</span> | all rights reserved</div>
+
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>

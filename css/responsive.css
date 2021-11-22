@@ -1,0 +1,322 @@
+/* media queries  */
+
+@media (min-width:1024px) {
+    /* .product-item__image {
+        width: 400px !important;
+    } */
+}
+
+/* Màn hình tablet */
+@media (max-width:991px){
+
+  
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .clock-single {
+        width: 20%;
+    }
+    
+
+  
+
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width:1024px) {
+
+    .blogs .box-container .box .content .title
+.blogs .box-container .box .content p {
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+}
+
+    .products .row .heading {
+        padding-top: 60px;
+    }
+
+    .product-item-id {
+        margin-top: 12px;
+    }
+
+    .product-item__image {
+        width: 400px !important;
+        height: 100px !important;
+    }
+
+    .small-img {
+        height: 80px;
+    }
+
+    .small-img-row{
+        
+        width: 400px;
+    }
+
+    .product-item__title {
+        margin-top: -14px;
+        font-size: 18px;
+        color: var(--main-color);
+        font-weight: 900;
+    }
+
+    .product-item__description {
+        font-size: 16px;
+        text-transform: none;
+        margin-top: 2px;
+    }
+    
+    .product-item__sale-price {
+        margin-top: 12px;
+    }
+    
+    .product-item__count {
+        font-size: 18px;
+        margin-top: 22px;
+    }
+
+    .product-item__content .btn {
+        margin-top: 20px;
+    }
+
+    .contact .row .heading {
+        padding-top: 50px;
+        
+    }
+
+    .content-mobile-hide {
+        display: none;
+    }
+
+    .content-pc-hide {
+        display: block;
+    }
+    
+}
+
+/* Màn hình mobile */
+@media (max-width:767px){
+
+    .menu-cacao {
+        margin-right: 44px !important;
+    }
+    
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; 
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+    section#about {
+        margin-top: 5%;
+    }
+    
+    .news .row .heading{
+        padding-top: 2px;
+        
+    }
+    
+    .news .row .image{
+        flex: 1 1 45rem;
+    }
+
+    .products .row .heading {
+        padding-top: 60px;
+        font-size: 36px;
+    }
+
+    .product-item .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: var(--black);
+        color: #eee;
+    }
+
+    .product-item__description {
+        display: none;
+    }
+
+    .product-item__title-mobile {
+        display: block;
+        padding: 0 12px;
+    }
+
+    .product-item__title {
+        display: none;
+    }
+
+    
+
+    .product-item__image {
+        width: 300px !important;
+        height: 1px !important;
+    }
+
+    .small-img {
+        height: 80px;
+    }
+    .small-img-row{
+        
+        width: 300px;
+    }
+
+    .product-item__content {
+        margin-top: -30px;
+    }
+
+    .product-item__mo-ta {
+        font-size: 8px;
+    }
+
+    .contact .row .heading {
+        padding-top: 60px;
+       
+    }
+
+    .contact .row form h3 {
+        font-size: 22px;
+        
+    }
+
+    .gallerys-item{
+        column-count: 2;
+    }
+
+    .content-mobile-hide {
+        display: none;
+    }
+
+    .content-pc-hide {
+        display: block;
+    }
+
+    .cart-page {
+        margin: 200px auto;
+    }
+
+    .cart-info p{
+        display: none;
+        font-size: 14px;
+    }
+
+    th {
+        font-size: 14px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+  
+    td div small {
+        font-size: 12px;
+    }
+
+    td a {
+        font-size: 14px;
+    }
+        
+    #clock {
+        flex-direction: column;
+        display: block;
+        
+    }
+
+    .flash-sale {
+        font-size: 24px;
+        padding: 0 12px;
+    }
+
+    .flash-sale__icon {
+        font-size: 20px;
+    }
+
+    .clock-single {
+        -webkit-box-reflect:below 0px linear-gradient(transparent,transparent,transparent) ;
+        width: 50%;
+        margin: 24px auto;
+    }
+}
+
+
+/* Siêu nhỏ */
+@media (max-width:450px){
+
+   
+
+    html{
+        font-size: 50%;
+    }
+
+    .news .row .image{
+        flex: 1 1 45rem;
+    }
+
+    .product-item .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+        background-color: var(--black);
+        color: #eee;
+    }
+
+    .gallerys-item{
+        column-count: 2;
+    }
+}

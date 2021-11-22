@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HUFLIT Coffee</title>
+    <!-- Link thêm logo, icon -->
+    <link rel="icon" href="./images/HUFLIT Coffee.png">
+    <!-- Link thêm font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Responsive link -->
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="./images/HUFLIT Coffee.png" alt="">
+        </a>
+    
+        <nav class="navbar">
+            <a href="./index.html">Trang chủ</a>
+            <a href="./about.html">Về chúng tôi</a>
+            
+            <a href="./product.html">Thực Đơn</a>
+            <a href="./contact.html">cửa hàng</a>
+            <a href="./news.html">tin tức</a>
+            <a href="./gallery.html">thư viện ảnh</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm ở đây....">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-1.png" alt="">
+                <div class="content">
+                    <h3>Cà phê 01</h3>
+                    <div class="price">30.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-2.png" alt="">
+                <div class="content">
+                    <h3>Cà phê 02</h3>
+                    <div class="price">30.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-3.png" alt="">
+                <div class="content">
+                    <h3>Cà phê 03</h3>
+                    <div class="price">30.000đ/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-4.png" alt="">
+                <div class="content">
+                    <h3>Cà phê 04</h3>
+                    <div class="price">30.000đ/-</div>
+                </div>
+            </div>
+            <a href="./cart.html" class="btn">mua ngay</a>
+        </div>
+    
+    </header>
+<!-- Product section start -->
+
+
+
+<section class="products" id="products">
+  
+    <div class="row">
+        <h1 class="heading"> <span>DANH SÁCH SẢN PHẨM</span></h1>
+    </div>
+    <div class="sort" >
+        <div class="sort-title">
+            Sắp xếp theo:
+        </div>
+    
+        <select>
+        
+            <option>Giá: Tăng dần</option>
+            <option>Giá: Giảm dần</option>
+            <option>Sản phẩm nổi bật</option>
+            <option>Tên: A-Z</option>
+            <option>Tên: Z-A</option>
+            <option>Cũ nhất</option>
+            <option>Mới nhất</option>
+            <option>Bán chạy nhất</option>
+        </select>
+    </div>
+    <div class="box-container" style="margin-top: 16px;">
+
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/capheviet-removebg-preview.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê gói Nescafe</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">49.000đ <span>55.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/menu-caphe.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê sữa</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">29.000đ <span>35.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/ca-phe-den-nentrang.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê đen</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">29.000đ <span>35.000đ</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/bac-xiu-arani.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Bạc sỉu</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">29.000đ <span>35.000đ</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/coldbrew-nentrang.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cold Brew</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">40.000đ <span>50.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/coldbrew-pbt-nentrang.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cold Brew Phúc Bồn Tử</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">45.000đ <span>55.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/latte-nentrang.png" width="75%" alt="">
+            </div>
+            <div class="content">
+                <h3>Latte</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">45.000đ <span>55.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/cappu-nentrang.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cappuchino</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">45.000đ <span>55.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/CPGg7.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê gói G7</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">49.000đ <span>55.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/CPGpl.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê gói Phúc Long</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">99.000đ <span>119.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/CPGtrungnguyen.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê gói Trung Nguyên</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">89.000đ <span>109.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/CPGongbau-nentrang.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê gói Ông Bầu</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">89.000đ <span>99.000đ</span></div>
+            </div>
+        </div>
+
+    </div>
+    
+
+        
+    
+    <ul class="pagination">
+        <li class="pagination-item">
+            <a href="" class="pagination-item__link">
+                <i class="pagination-item__icon fas fa-angle-left"></i>
+            </a>
+        </li>
+        <li class="pagination-item pagination-item--active">
+            <a href="#" class="pagination-item__link">1</a>
+        </li>
+        <li class="pagination-item">
+            <a href="#" class="pagination-item__link">2</a>
+        </li>
+        <li class="pagination-item">
+            <a href="#" class="pagination-item__link">3</a>
+        </li>
+        <li class="pagination-item">
+            <a href="#" class="pagination-item__link">4</a>
+        </li>
+        <li class="pagination-item">
+            <a href="#" class="pagination-item__link">5</a>
+        </li>
+        <li class="pagination-item">
+            <a href="#" class="pagination-item__link">...</a>
+        </li>
+        <li class="pagination-item">
+            <a href="#" class="pagination-item__link">14</a>
+        </li>
+        <li class="pagination-item">
+            <a href="#" class="pagination-item__link">
+                <i class="pagination-item__icon fas fa-angle-right"></i>
+            </a>
+        </li>
+    </ul>
+
+    
+
+    <div class="product-lq">
+        Sản phẩm liên quan:
+    </div>
+
+    <div class="box-container" style="margin-bottom:24px">
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/CPGtch.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê gói The Coffee House</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">109.000đ <span>129.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/CPGhighland.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê gói HighLand</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">109.000đ <span>129.000đ</span></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icons">
+                <a href="./cart.html" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="./product-item.html" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="./images/CPGstarbucks.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Cà phê gói Starbucks</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">149.000đ <span>155.000đ</span></div>
+            </div>
+        </div>
+    </div>
+
+
+        
+
+    
+</section>
+<section class="footer">
+
+    <div class="share">
+        <a href="https://huflit.edu.vn/" class="fab fa-facebook-f"></a>
+        <a href="https://huflit.edu.vn/" class="fab fa-twitter"></a>
+        <a href="https://huflit.edu.vn/" class="fab fa-instagram"></a>
+        <a href="https://huflit.edu.vn/" class="fab fa-linkedin"></a>
+        <a href="https://huflit.edu.vn/" class="fab fa-youtube"></a>
+    </div>
+
+    <div class="links">
+        <a href="/index.html">Trang chủ</a>
+        <a href="/about.html">Về chúng tôi</a>
+        <a href="/menu.html">Thực đơn</a>
+        <a href="/product.html">Cà phê gói</a>
+        <a href="/contact.html">Cửa hàng</a>
+        <a href="/news.html">Tin tức</a>
+        <a href="/gallery.html">Thư viện ảnh</a>
+    </div>
+
+    <div class="credit">&copy; <span>HUFLIT Coffee</span> | all rights reserved</div>
+
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>
