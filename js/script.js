@@ -1,4 +1,11 @@
 
+// Header Animation, transparents to color
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  }); 
     
 
 
@@ -42,10 +49,20 @@ window.onscroll = () =>{
     cartItem.classList.remove('active');
 }
 
+// Xóa sản phẩm
+    /* Get all elements with class="close" */
+    var closebtns = document.getElementsByClassName("fa-times");
+    var i;
+    
+    /* Loop through the elements, and hide the parent, when clicked on */
+    for (i = 0; i < closebtns.length; i++) {
+      closebtns[i].addEventListener("click", function() {
+        this.parentElement.style.display = 'none';
+      });
+    }
 
-
+    
 // gallery popup
-
 $(document).ready(function() {
     $('.gallerys-item').magnificPopup({
         type:'image',
@@ -54,4 +71,4 @@ $(document).ready(function() {
     });
 });
 
-// Product-item click hình ảnh
+

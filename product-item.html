@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,35 +14,38 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Responsive link -->
     <link rel="stylesheet" href="./css/responsive.css">
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 </head>
+
 <body>
-    <header class="header">
+    <header class="header navbar-fixed-top">
 
         <a href="index.html" class="logo">
             <img src="./images/HUFLIT Coffee.png" alt="">
         </a>
-    
+
         <nav class="navbar">
             <a href="./index.html">Trang chủ</a>
             <a href="./about.html">Về chúng tôi</a>
-            
+
             <a href="./product.html">Thực Đơn</a>
             <a href="./contact.html">cửa hàng</a>
             <a href="./news.html">tin tức</a>
             <a href="./gallery.html">thư viện ảnh</a>
         </nav>
-    
+
         <div class="icons">
             <div class="fas fa-search" id="search-btn"></div>
             <div class="fas fa-shopping-cart" id="cart-btn"></div>
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
-    
+
         <div class="search-form">
-            <input type="search" id="search-box" placeholder="Tìm kiếm tại đây...">
+            <input name="search" type="search" id="search-box" placeholder="Tìm kiếm tại đây...">
             <label for="search-box" class="fas fa-search"></label>
         </div>
-    
+
         <div class="cart-items-container">
             <div class="cart-item">
                 <span class="fas fa-times"></span>
@@ -77,49 +81,52 @@
             </div>
             <a href="./cart.html" class="btn">mua ngay</a>
         </div>
-    
+
     </header>
-<!-- Product-item -->
-   
+    <!-- Product-item -->
+
     <section class="product-item" id="product-item">
-        <h1 class="product-item-id"><a href="./index.html">Trang chủ</a><a href="./product.html"> / Cà phê gói</a><a href="./product-item.html"> / Nescafe</a></h1>
+        <h1 class="product-item-id"><a href="./index.html">Trang chủ</a><a href="./product.html"> / Cà phê gói</a><a
+                href="./product-item.html"> / Nescafe</a></h1>
         <div class="row">
             <h1 class="product-item__title-mobile">NESCAFÉ CAFÉ VIỆT CÀ PHÊ ĐEN ĐÁ</h1>
             <div class="image ">
-            <a href="./images/ca-phe-viet-full.jpg"><img id="ProductImg" class="product-item__image" style="width:700px; min-height: 400px;" src="./images/ca-phe-viet-full.jpg" alt=""></a>
-            <div class="small-img-row">
-                <div class="small-img-col">
-                    <img src="./images/ca-phe-viet-full.jpg" class="small-img" >
+                <a href="./images/ca-phe-viet-full.jpg"><img id="ProductImg" class="product-item__image"
+                        style="width:700px; min-height: 400px;" src="./images/ca-phe-viet-full.jpg" alt=""></a>
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="./images/ca-phe-viet-full.jpg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/nescafe-viet-small1.jpg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/nescafe-viet-small3.jpg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/nescafe-cafe-viet-2.png" class="small-img">
+                    </div>
+
                 </div>
-                <div class="small-img-col">
-                    <img src="images/nescafe-viet-small1.jpg" class="small-img" >
-                </div>
-                <div class="small-img-col">
-                    <img src="images/nescafe-viet-small3.jpg" class="small-img" >
-                </div>
-                <div class="small-img-col">
-                    <img src="images/nescafe-cafe-viet-2.png" class="small-img" >
-                </div>
-     
-             </div>
             </div>
             <div class="product-item__content">
 
-                
+
                 <h1 class="product-item__title">
                     NESCAFÉ CAFÉ VIỆT CÀ PHÊ ĐEN ĐÁ
                 </h1>
                 <p class="product-item__description">
-                    Hương vị cà phê đen đậm đà và mạnh mẽ với hương thơm lôi cuốn, cho bạn tách cà phê đen đá thuần túy Việt Nam.
+                    Hương vị cà phê đen đậm đà và mạnh mẽ với hương thơm lôi cuốn, cho bạn tách cà phê đen đá thuần túy
+                    Việt Nam.
                 </p><br>
                 <p class="product-item__sale-price">
-                    49.000 đ 
+                    49.000 đ
                 </p>
                 <p class="product-item__old-price">55.000đ</p>
-                <div class="product-item__count"> 
-                    <p class="product-item__count-title">Số lượng:</p>              
+                <div class="product-item__count">
+                    <p class="product-item__count-title">Số lượng:</p>
                     <input type="number" value="1" class="product-item__count-btn">
-                    
+
                 </div>
                 <div>
                     <a href="./cart.html" class="btn">Thêm vào giỏ hàng</a>
@@ -129,104 +136,132 @@
         <div class="row">
             <div class="product-item__mo-ta">
                 <h1>Mô tả sản phẩm:</h1>
-                <p>Được làm từ 100% hạt cà phê Việt Nam chất lượng mang đến một ly cà phê đen thuần túy Việt Nam với hương vị cà phê cực mạnh mẽ, lôi cuốn mà không phái mạnh Việt nào có thể cưỡng lại được. Sản phẩm cà phê hòa tan chất lượng, đáp ứng nhu cầu dinh dưỡng hàng ngày cho người trưởng thành</p>
+                <p>Được làm từ 100% hạt cà phê Việt Nam chất lượng mang đến một ly cà phê đen thuần túy Việt Nam với
+                    hương vị cà phê cực mạnh mẽ, lôi cuốn mà không phái mạnh Việt nào có thể cưỡng lại được. Sản phẩm cà
+                    phê hòa tan chất lượng, đáp ứng nhu cầu dinh dưỡng hàng ngày cho người trưởng thành</p>
                 <h3>Thông tin sản phẩm:</h3>
-                <p>Cà phê đen đá NesCafé Việt mang trong mình vị đắng quen thuộc và hương thơm tự nhiên vốn có, nay được bổ sung gia tăng hàm lượng cà phê nguyên chất, cho hương vị cực mạnh, thơm ngon gấp bội.</p>
-                <p>Sản phẩm được tạo ra để mang đến niềm đam mê về một loại cà phê nguyên chất và thuần khiết. Bạn sẽ cảm nhận được hương vị đậm đà rất Việt Nam, vị đắng dịu nhẹ ban đầu và "dư âm" của vị cà phê đọng lại nơi cổ họng không thể nào quên.</p>
-                <p>Còn gì tuyệt vời hơn khi khởi đầu ngày mới với một ly NesCafe Việt cà phê đen đá, hớp một ngụm đặc trưng vị cà phê mạnh mẽ, bạn như được khơi dậy nguồn hứng khởi cho thể chất và tinh thần. Cũng nhờ đó, mọi câu chuyện, mọi kết nối được chia sẻ dễ dàng hơn.</p>
+                <p>Cà phê đen đá NesCafé Việt mang trong mình vị đắng quen thuộc và hương thơm tự nhiên vốn có, nay được
+                    bổ sung gia tăng hàm lượng cà phê nguyên chất, cho hương vị cực mạnh, thơm ngon gấp bội.</p>
+                <p>Sản phẩm được tạo ra để mang đến niềm đam mê về một loại cà phê nguyên chất và thuần khiết. Bạn sẽ
+                    cảm nhận được hương vị đậm đà rất Việt Nam, vị đắng dịu nhẹ ban đầu và "dư âm" của vị cà phê đọng
+                    lại nơi cổ họng không thể nào quên.</p>
+                <p>Còn gì tuyệt vời hơn khi khởi đầu ngày mới với một ly NesCafe Việt cà phê đen đá, hớp một ngụm đặc
+                    trưng vị cà phê mạnh mẽ, bạn như được khơi dậy nguồn hứng khởi cho thể chất và tinh thần. Cũng nhờ
+                    đó, mọi câu chuyện, mọi kết nối được chia sẻ dễ dàng hơn.</p>
                 <h3>Hướng dẫn sử dụng:</h3>
-                <p>Cho 2 gói cà phê hòa tan vào ly, rót 75-120 ml nước nóng (80-100 độ C) vào ly và khuấy đều. Cho thêm đá vào ly khuấy đều và thưởng thức.</p>
+                <p>Cho 2 gói cà phê hòa tan vào ly, rót 75-120 ml nước nóng (80-100 độ C) vào ly và khuấy đều. Cho thêm
+                    đá vào ly khuấy đều và thưởng thức.</p>
                 <h3>Bảo quản:</h3>
                 <p>Nơi khô ráo, thoáng mát. Tránh ánh nắng trực tiếp.</p>
             </div>
         </div>
     </section>
-    
+
     <!-- review section starts  -->
 
-<section class="review" id="review">
+    <section class="review" id="review">
 
-    <h1 class="heading"> Phản hồi khách hàng <span>Mới nhất</span> </h1>
+        <h1 class="heading"> Phản hồi khách hàng <span>Mới nhất</span> </h1>
 
-    <div class="box-container">
+        <div class="box-container">
 
-        <div class="box">
-            <img src="images/quote-img.png" alt="" class="quote">
-            <p style="text-transform: none;">Cà phê rất ngon,nhưng mà giá hơi cao so với mặt bằng chung, tuy nhiên tôi sẽ tiếp tục ủng hộ</p>
-            <img src="./images/khach-hang-1.jpg" class="user" alt="">
-            <h3>Nguyễn Văn A</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p style="text-transform: none;">Cà phê rất ngon,nhưng mà giá hơi cao so với mặt bằng chung, tuy nhiên
+                    tôi sẽ tiếp tục ủng hộ</p>
+                <img src="./images/khach-hang-1.jpg" class="user" alt="">
+                <h3>Nguyễn Văn A</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
             </div>
+
+
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p style="text-transform: none;">Cà phê ngon, giá ổn, rất hợp khẩu vị của mình cho hẳn shop 5 sao luôn
+                    nha, yêu Shop nhiều lém ♥</p>
+                <img src="./images/khach-hang-2.jpg" class="user" alt="">
+                <h3>Lê Thị B</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p style="text-transform: none;">Cà phê gì mà dở tệ :))) thật sự chưa bao giờ thấy cái shop nào bán cafe
+                    tệ như shop này :))) thà uống lề đường còn hơn</p>
+                <img src="./images/khach-hang-3.jpg" class="user" alt="">
+                <h3>Trần Văn C</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+
         </div>
 
-        
+    </section>
 
-        <div class="box">
-            <img src="images/quote-img.png" alt="" class="quote">
-            <p style="text-transform: none;">Cà phê ngon, giá ổn, rất hợp khẩu vị của mình cho hẳn shop 5 sao luôn nha, yêu Shop nhiều lém ♥</p>
-            <img src="./images/khach-hang-2.jpg" class="user" alt="">
-            <h3>Lê Thị B</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+    <!-- review section ends -->
+
+    <section class="contact" id="contact">
+        <div class="row">
+            <form action="">
+                <h3 style="color: var(--main-color);">Nhập thông tin và nội dung bạn muốn phản hồi</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input name="Name" type="name" placeholder="Tên của bạn" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input name="Email" type="email" placeholder="Email của bạn" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input name="phone" type="tel" placeholder="Số điện thoại" required>
+                </div>
+                <div class="inputBox">
+                    <!-- <span class="fas fa-phone"></span> -->
+                    <input type="text" placeholder="Nội dung ít nhất 100 ký tự" minlength="100" required>
+                </div>
+
+                <!-- Rating -->
+                <div class="rating">
+                    <h2>Đánh giá:</h2>
+                    <div class="stars">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <!-- End Rating -->
+
                 
-            </div>
-        </div>
-        
-        <div class="box">
-            <img src="images/quote-img.png" alt="" class="quote">
-            <p style="text-transform: none;">Cà phê gì mà dở tệ :))) thật sự chưa bao giờ thấy cái shop nào bán cafe tệ như shop này :))) thà uống lề đường còn hơn</p>
-            <img src="./images/khach-hang-3.jpg" class="user" alt="">
-            <h3>Trần Văn C</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
+                <input type="submit" onclick="alert('Nội dung gửi thành công')" value="gửi phản hồi" class="btn">
+
+
+            </form>
+
         </div>
 
-    </div>
-
-</section>
-
-<!-- review section ends -->
-
-<section class="contact" id="contact">
-    <div class="row">
-        <form action="">
-            <h3 style="color: var(--main-color);">Nhập thông tin và nội dung bạn muốn phản hồi</h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="Tên của bạn" required>
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="Email của bạn" required>
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="tel" placeholder="Số điện thoại" required>
-            </div>
-            <div class="inputBox">
-                <!-- <span class="fas fa-phone"></span> -->
-                <input type="text" placeholder="Nội dung ít nhất 100 ký tự" minlength="100" required>
-            </div>
-            <input type="submit" onclick="alert('Nội dung gửi thành công')" value="gửi phản hồi" class="btn" >
-        </form>
-
-    </div>
-
-</section>
+    </section>
 
 
     <!-- footer -->
@@ -239,46 +274,56 @@
             <a href="https://huflit.edu.vn/" class="fab fa-linkedin"></a>
             <a href="https://huflit.edu.vn/" class="fab fa-youtube"></a>
         </div>
-    
+
         <div class="links">
             <a href="./index.html">Trang chủ</a>
             <a href="./about.html">Về chúng tôi</a>
-            
+
             <a href="./product.html">Thực Đơn</a>
             <a href="./contact.html">Cửa hàng</a>
             <a href="./news.html">Tin tức</a>
             <a href="./gallery.html">Thư viện ảnh</a>
         </div>
-    
+
         <div class="credit">&copy; <span>HUFLIT Coffee</span> | all rights reserved</div>
-    
+
     </section>
     <script src="js/script.js"></script>
     <script>
         var ProductImg = document.getElementById("ProductImg");
-    
-    var SmallImg = document.getElementsByClassName("small-img");
-       
- 
-        SmallImg[0].onclick = function()
-        {
+
+        var SmallImg = document.getElementsByClassName("small-img");
+
+
+        SmallImg[0].onclick = function () {
             ProductImg.src = SmallImg[0].src;
         }
-        SmallImg[1].onclick = function()
-        {
+        SmallImg[1].onclick = function () {
             ProductImg.src = SmallImg[1].src;
-        
+
         }
-        SmallImg[2].onclick = function()
-        {
+        SmallImg[2].onclick = function () {
             ProductImg.src = SmallImg[2].src;
-        
+
         }
-        SmallImg[3].onclick = function()
-        {
+        SmallImg[3].onclick = function () {
             ProductImg.src = SmallImg[3].src;
-        
+
+        }
+
+        // Star Rating
+
+        let star = document.querySelectorAll('input');
+        let showValue = document.querySelector('#rating-value');
+
+        for (let i = 0; i < star.length; i++) {
+            star[i].addEventListener('click', function () {
+                i = this.value;
+
+                showValue.innerHTML = i + " out of 5";
+            });
         }
     </script>
 </body>
+
 </html>

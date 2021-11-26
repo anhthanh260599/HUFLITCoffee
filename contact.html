@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Responsive link -->
     <link rel="stylesheet" href="./css/responsive.css">
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 </head>
 <body>
     <!-- header section starts  -->
 
-    <header class="header">
+    <header class="header navbar-fixed-top">
 
         <a href="index.html" class="logo">
             <img src="./images/HUFLIT Coffee.png" alt="">
@@ -107,15 +109,15 @@
             <h3>Nhập thông tin và nội dung</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
-                <input type="text" placeholder="Tên của bạn" required>
+                <input name="Name" type="text" placeholder="Tên của bạn" required>
             </div>
             <div class="inputBox">
                 <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="Email của bạn" required>
+                <input name="Email" type="email" placeholder="Email của bạn" required>
             </div>
             <div class="inputBox">
                 <span class="fas fa-phone"></span>
-                <input type="tel" placeholder="Số điện thoại" required>
+                <input name="phone" type="tel" placeholder="Số điện thoại" required>
             </div>
             <div class="inputBox">
                 <!-- <span class="fas fa-phone"></span> -->
