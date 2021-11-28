@@ -129,17 +129,17 @@ section#about {
 
 .header{
     background: transparent;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding:1.5rem 7%;
-    /* border-bottom: var(--border); */
-    
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
 }
+
+
+
 
 .header .logo img{
     height: 6rem;
@@ -171,12 +171,30 @@ section#about {
 
 /* Navbar Scroll */
 
-.navbar-fixed-top.scrolled {
+/* .navbar-fixed-top.scrolled {
     background-color: var(--bg)  !important;
     border-bottom: var(--border) !important;
 
     transition: border-bottom background-color 400ms linear;
+
+} */
+
+.navbar-fixed-top.scrolled {
+    letter-spacing: 3px;
+    font-size:20px;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+    0 4px 4px rgba(0,0,0,0.12),
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+    background-color: var(--bg)  !important;
+    border-bottom: var(--border) !important;
+    transition: border-bottom background-color 400ms linear;
+    
 }
+
 
 /* End Navbar Scroll */
 
@@ -816,6 +834,11 @@ section#about {
 
 .news .row .image{
     flex:   1rem;
+}
+
+.news-page {
+    margin-top:56px;
+    padding-top: 24px;
 }
 
 .gallery .row {
