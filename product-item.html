@@ -125,7 +125,7 @@
                 <p class="product-item__old-price">55.000đ</p>
                 <div class="product-item__count">
                     <p class="product-item__count-title">Số lượng:</p>
-                    <input type="number" value="1" class="product-item__count-btn">
+                    <input type="number" value="1" min="1" class="product-item__count-btn">
 
                 </div>
                 <div>
@@ -221,7 +221,7 @@
 
     <section class="contact" id="contact">
         <div class="row">
-            <form action="">
+            <form id="form" action="">
                 <h3 style="color: var(--main-color);">Nhập thông tin và nội dung bạn muốn phản hồi</h3>
                 <div class="inputBox">
                     <span class="fas fa-user"></span>
@@ -229,11 +229,12 @@
                 </div>
                 <div class="inputBox">
                     <span class="fas fa-envelope"></span>
-                    <input name="Email" type="email" placeholder="Email của bạn" required>
+                    <input name="Email" id="email" type="email" placeholder="Email của bạn" onkeydown="validation()" required>
+                    <span id="email-text"></span>
                 </div>
                 <div class="inputBox">
                     <span class="fas fa-phone"></span>
-                    <input name="phone" type="tel" placeholder="Số điện thoại" required>
+                    <input name="phone" type="tel" placeholder="Số điện thoại" pattern="[0-9]{10}" required>
                 </div>
                 <div class="inputBox">
                     <!-- <span class="fas fa-phone"></span> -->
@@ -254,7 +255,7 @@
                 <!-- End Rating -->
 
                 
-                <input type="submit" onclick="alert('Nội dung gửi thành công')" value="gửi phản hồi" class="btn">
+                <input type="submit" value="gửi phản hồi" class="btn">
 
 
             </form>
@@ -289,7 +290,7 @@
 
     </section>
     <script src="js/script.js"></script>
-    <script>
+    <script type="text/javascript">
         var ProductImg = document.getElementById("ProductImg");
 
         var SmallImg = document.getElementsByClassName("small-img");
@@ -311,18 +312,39 @@
 
         }
 
-        // Star Rating
+        function validation() {
+            var form  = document.getElementById("form");
+            var email = document.getElementById("email").value;
+            var text  = document.getElementById("email-text");
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (email.match(pattern))
+            {
+                form.classList.add("valid")
+                form.classList.remove("invalid")
+                text.innerHTML ="Email hợp lệ";
+                text.style.color = "#90EE90";
+                text.style.fontSize = "16px";
+                text.style.textTransform = "none";
+                text.style.paddingRight = "4px";
+            }
+            else
+            {
+                form.classList.remove("valid")
+                form.classList.add("invalid")
+                text.innerHTML ="Email không hợp lệ";
+                text.style.color = "#FF6347";
+                text.style.fontSize = "16px";
+                text.style.textTransform = "none";
+                text.style.paddingRight = "4px";
 
-        let star = document.querySelectorAll('input');
-        let showValue = document.querySelector('#rating-value');
 
-        for (let i = 0; i < star.length; i++) {
-            star[i].addEventListener('click', function () {
-                i = this.value;
-
-                showValue.innerHTML = i + " out of 5";
-            });
+            }
+         
         }
+        
+
+       
+        
     </script>
 </body>
 

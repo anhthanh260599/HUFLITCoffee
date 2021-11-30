@@ -105,7 +105,7 @@
 
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4648807452513!2d106.66645882962867!3d10.775662465650866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9023a3a85d%3A0xdee5c99a7b02feab!2sHuflit!5e0!3m2!1svi!2s!4v1637126107830!5m2!1svi!2s" ></iframe>
 
-        <form action="">
+        <form id="form" action="">
             <h3>Nhập thông tin và nội dung</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
@@ -113,17 +113,18 @@
             </div>
             <div class="inputBox">
                 <span class="fas fa-envelope"></span>
-                <input name="Email" type="email" placeholder="Email của bạn" required>
+                <input name="Email" id="email" type="email" placeholder="Email của bạn" onkeydown="validation()" required>
+                <span id="email-text"></span>
             </div>
             <div class="inputBox">
                 <span class="fas fa-phone"></span>
-                <input name="phone" type="tel" placeholder="Số điện thoại" required>
+                <input name="phone" type="tel" placeholder="Số điện thoại" pattern="[0-9]{10}" required>
             </div>
             <div class="inputBox">
                 <!-- <span class="fas fa-phone"></span> -->
                 <input type="text" placeholder="Nội dung ít nhất 100 ký tự" minlength="100" required>
             </div>
-            <input type="submit" onclick="alert('Nội dung gửi thành công')" value="gửi phản hồi" class="btn" >
+            <input type="submit" value="gửi phản hồi" class="btn" >
         </form>
 
     </div>
@@ -153,5 +154,36 @@
 
 </section>
 <script src="js/script.js"></script>
+<script type="text/javascript">
+    function validation() {
+            var form  = document.getElementById("form");
+            var email = document.getElementById("email").value;
+            var text  = document.getElementById("email-text");
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (email.match(pattern))
+            {
+                form.classList.add("valid")
+                form.classList.remove("invalid")
+                text.innerHTML ="Email hợp lệ";
+                text.style.color = "#90EE90";
+                text.style.fontSize = "16px";
+                text.style.textTransform = "none";
+                text.style.paddingRight = "4px";
+            }
+            else
+            {
+                form.classList.remove("valid")
+                form.classList.add("invalid")
+                text.innerHTML ="Email không hợp lệ";
+                text.style.color = "#FF6347";
+                text.style.fontSize = "16px";
+                text.style.textTransform = "none";
+                text.style.paddingRight = "4px";
+
+
+            }
+         
+        }
+</script>
 </body>
 </html>
