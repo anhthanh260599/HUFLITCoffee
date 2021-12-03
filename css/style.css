@@ -628,6 +628,7 @@ section#about {
     height: 700px;
     width: 100%;
     object-fit: cover;
+    border-radius: 24px;
 }
 
 .contact .row form{
@@ -1299,9 +1300,6 @@ option {
 .footer .credit span{
     color:var(--main-color);
 }
-
-
-
 
 
 

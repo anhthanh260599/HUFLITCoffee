@@ -343,6 +343,10 @@
         margin: 24px auto;
     }
 
+    .pagination-item {
+        margin: 0 8px;
+    }
+
     
 }
 
