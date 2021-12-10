@@ -17,6 +17,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 </head>
 <body>
+<!-- Loading Screen -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+<!-- End Loading Screen -->
+
     <header class="header navbar-fixed-top">
 
         <a href="index.html" class="logo">
@@ -84,7 +90,7 @@
 
     <section class="news-item" id="news-item">
         <div class="news-item__title">
-            <h1>Nguồn gốc và sự phát triển của cà phê</h1>
+            <h1> <img class="news-item__title-img" src="./images/nguon-goc-ca-phe.jpg" alt=""> Nguồn gốc và sự phát triển của cà phê </h1>
         </div>
         <div class="news-item__content">
             <p>
@@ -123,13 +129,15 @@
             <div style="padding-bottom: 24px;">Cà phê đóng một vai trò quan trọng trong xã hội xuyên suốt lịch sử hiện đại. Ở Châu Phi và Yemen, nó được dùng trong các nghi lễ tôn giáo. Kết quả là các nhà thờ ở Ethiopia cấm sử dụng cà phê cho đến triều đại Menelik II của Ethiopia. Nó cũng bị cấm ở Ottoman Thổ Nhĩ Kỳ trong thế kỉ 17 vì lý do chính trị.</div>
             
 
-            
-            <h2 style="float: right; margin-bottom: 12px; line-height: 8px; font-size: 20px; color: #eee;">Các tin liên quan:</h2> <br>
+            <div class="news-item__tinlienquan">
+                <h2 style="float: right; margin-bottom: 12px; line-height: 8px; font-size: 20px; color: #eee;">Các tin liên quan:</h2> <br>
             <a style="float: right;" href="./news-item.html">Hướng dẫn pha cà phê Coldbrew</a> <br>
             <a style="float: right;" href="./news-item.html">Hướng dẫn pha Cà phê phin</a> <br>
             <a style="float: right;" href="./news-item.html">Art Latte từ Zero đến Hero</a> <br>
             <a style="float: right;" href="./news-item.html">10 Lợi ích của việc uống cà phê</a>  <br>
             <a style="float: right;" href="./news-item.html">Nguồn gốc và sự phát triển của cà phê</a>    <br>
+            </div>
+            
         
         </div>
     </section>
@@ -168,5 +176,14 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script>
+    // Loading Screen
+    $(window).on("load",function(){
+        $(".loader-container").fadeOut(2500);
+    });</script>
+<!-- End Loading Screen -->
+
+</script>
+
 </body>
 </html>
