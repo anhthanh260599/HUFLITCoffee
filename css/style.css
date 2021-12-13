@@ -878,7 +878,7 @@ section#about {
     /* flex:1 2 45rem; */
     height: 30rem;
     overflow: hidden;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .news .row .image img {
@@ -896,7 +896,8 @@ section#about {
 
 .news-item__img {
     width: 100%;
-    margin: 24px 0;
+    margin: 24px 0;   
+    border-radius: 12px;
 }
 
 .news-item__chu-thich {
@@ -963,6 +964,9 @@ section#about {
 .news-item__tinlienquan {
     background-color: var(--bg);
     padding: 24px;
+    border: 1px solid rgba(211, 173, 127,0.8);
+    
+    border-radius: 24px;
 }
 
 .news-item__content a {
@@ -981,6 +985,8 @@ section#about {
     text-transform: none;
     letter-spacing: 1px;
     line-height: 24px;
+    
+    
 }
 
 .news-lienquan__icon {
@@ -997,6 +1003,8 @@ section#about {
     background-color: var(--black);
     padding: 1px 24px 24px 24px;
     margin-top: 24px;
+    border: 1px solid var(--main-color);
+    border-radius: 24px;
 }
 
 section#product-item {
@@ -1293,43 +1301,15 @@ option {
     /* text-align: center; */
     margin-top: 100px;
     color: #fff;
-    
-
+    border-top: 1px solid var(--main-color);
+    min-height: 300px;
 }
 
 .footer .share{
     padding:1rem 0;
 }
 
-.footer .share a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    color:#fff;
-    border:var(--border);
-    margin:.3rem;
-    border-radius: 50%;
-}
 
-.footer .share a:hover{
-    background-color: var(--main-color);
-}
-
-.footer .links{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-    gap:1rem;
-}
-
-.footer .links a{
-    padding:.7rem 2rem;
-    color:#fff;
-    border:var(--border);
-    font-size: 2rem;
-}
 
 .footer .links a:hover{
     background:var(--main-color);
@@ -1340,7 +1320,7 @@ option {
     color:var(--bg);
     font-weight: 400;
     text-align: center;
-    background-color: var(--main-color);
+    background-color: rgba(189, 128, 128,0.8) ;
     overflow: hidden;
     padding: 0.4rem;
 }
@@ -1374,6 +1354,7 @@ option {
 
 .footer__item a:hover {
     color:rgb(255, 67, 67);
+    letter-spacing: 1px;
 }
 
 .footer__item i {
